@@ -18,11 +18,11 @@ export const WEBSTORAGE_CONFIG = new InjectionToken('WEBSTORAGE_CONFIG');
 	providers: [SessionStorageService, LocalStorageService],
 	imports: []
 })
-export class Ng2Webstorage {
+export class NgxWebstorage {
 
 	static forRoot(config?:IWebstorageConfig):ModuleWithProviders {
 		return {
-			ngModule: Ng2Webstorage,
+			ngModule: NgxWebstorage,
 			providers: [
 				{
 					provide: WEBSTORAGE_CONFIG,

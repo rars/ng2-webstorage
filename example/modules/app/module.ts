@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
-import {Ng2Webstorage} from '../../libwrapper';
+import {NgxWebstorage} from '../../libwrapper';
 
 import {App} from './components/app';
 import {AppForm} from './components/appForm';
@@ -16,12 +16,12 @@ import {CommonModule} from '@angular/common';
 		BrowserModule,
 		FormsModule,
 		ReactiveFormsModule,
-		Ng2Webstorage.forRoot({
+		NgxWebstorage.forRoot({
 			separator: '.',
 			prefix: 'ahah',
 			caseSensitive: true
 		}),
-		//Ng2Webstorage
+		//NgxWebstorage
 	],
 	bootstrap: [App],
 })
