@@ -1,5 +1,5 @@
 import { KeyStorageHelper, WebStorageHelper, StorageObserverHelper } from '../helpers/index';
-var WebStorageService = /** @class */ (function () {
+var WebStorageService = (function () {
     function WebStorageService(sType) {
         if (sType === void 0) { sType = null; }
         this.sType = sType;

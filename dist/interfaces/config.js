@@ -1,5 +1,5 @@
 import { LIB_KEY, LIB_KEY_CASE_SENSITIVE, LIB_KEY_SEPARATOR } from '../constants/lib';
-var WebstorageConfig = /** @class */ (function () {
+var WebstorageConfig = (function () {
     function WebstorageConfig(config) {
         this.prefix = LIB_KEY;
         this.separator = LIB_KEY_SEPARATOR;
