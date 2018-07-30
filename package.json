@@ -1,5 +1,5 @@
 {
-  "name": "ngx-webstorage",
+  "name": "@rars/ngx-webstorage",
   "version": "3.0.0",
   "description": "Angular webstorage manager",
   "main": "bundles/core.umd.js",
