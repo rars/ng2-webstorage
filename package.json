@@ -1,6 +1,6 @@
 {
   "name": "ngx-webstorage",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Angular webstorage manager",
   "main": "bundles/core.umd.js",
   "module": "dist/app.js",
@@ -62,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PillowPillow/ng2-webstorage.git"
+    "url": "git+https://github.com/rars/ng2-webstorage.git"
   },
   "keywords": [
     "typescript",
@@ -74,7 +74,7 @@
   "author": "Nicolas Gaignoux <https://github.com/PillowPillow>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PillowPillow/ng2-webstorage/issues"
+    "url": "https://github.com/rars/ng2-webstorage/issues"
   },
-  "homepage": "https://github.com/PillowPillow/ng2-webstorage#readme"
+  "homepage": "https://github.com/rars/ng2-webstorage#readme"
 }

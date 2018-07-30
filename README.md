@@ -1,4 +1,7 @@
 # ngx-webstorage
+
+Please note that this is a fork of the original ngx-webstorage library found at https://github.com/PillowPillow/ng2-webstorage to make compatible with Angular 6.
+
 ### Local and session storage - Angular service
 This library provides an easy to use service to manage the web storages (local and session) from your Angular application.
 It provides also two decorators to synchronize the component attributes and the web storages.
@@ -33,7 +36,7 @@ It provides also two decorators to synchronize the component attributes and the 
 		imports: [
 			BrowserModule,
 			Ng2Webstorage,
-			//Ng2Webstorage.forRoot({ prefix: 'custom', separator: '.', caseSensitive:true }) 
+			//Ng2Webstorage.forRoot({ prefix: 'custom', separator: '.', caseSensitive:true })
 			// The forRoot method allows to configure the prefix, the separator and the caseSensitive option used by the library
 			// Default values:
 			// prefix: "ng2-webstorage"
@@ -46,11 +49,11 @@ It provides also two decorators to synchronize the component attributes and the 
 	}
 
 	```
-		
+
 	If you're using systemJS, you have to reference the umd version of the lib in your config.
 	```` typescript
 		System.config({
-			map: { 
+			map: {
 				...,
 				'ngx-webstorage': 'node_modules/ngx-webstorage'
 			},
@@ -60,7 +63,7 @@ It provides also two decorators to synchronize the component attributes and the 
 			}
 		});
 	````
-	
+
 
 3. Inject the services you want in your components and/or use the available decorators
 
@@ -330,10 +333,10 @@ export class FooComponent {
 ### <a name="knownissues">Known issues</a>
 --------------------
 
-- *Serialization doesn't work for objects:* 
+- *Serialization doesn't work for objects:*
 
-Ng2Webstorage's decorators are based upon accessors so the update trigger only on assignation. 
-Consequence, if you change the value of a bound object's property the new model will not be store properly. The same thing will happen with a push into a bound array. 
+Ng2Webstorage's decorators are based upon accessors so the update trigger only on assignation.
+Consequence, if you change the value of a bound object's property the new model will not be store properly. The same thing will happen with a push into a bound array.
 To handle this cases you have to trigger manually the accessor.
 
 ````typescript
