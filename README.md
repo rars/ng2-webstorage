@@ -23,7 +23,7 @@ It provides also two decorators to synchronize the component attributes and the 
 
 ### <a name="gstart">Getting Started</a>
 
-1. Download the library using npm `npm install --save ngx-webstorage`
+1. Download the library using npm `npm install --save @rars/ngx-webstorage`
 2. Register the library in your module
 
 	```typescript
@@ -118,7 +118,7 @@ It provides also two decorators to synchronize the component attributes and the 
 ##### Usage:
 ````typescript
 import {Component} from '@angular/core';
-import {LocalStorageService} from 'ngx-webstorage';
+import {LocalStorageService} from '@rars/ngx-webstorage';
 
 @Component({
 	selector: 'foo',
@@ -154,7 +154,7 @@ export class FooComponent {
 ##### Usage:
 ````typescript
 import {Component} from '@angular/core';
-import {LocalStorageService} from 'ngx-webstorage';
+import {LocalStorageService} from '@rars/ngx-webstorage';
 
 @Component({
 	selector: 'foo',
@@ -186,7 +186,7 @@ export class FooComponent {
 ##### Usage:
 ````typescript
 import {Component} from '@angular/core';
-import {LocalStorageService, LocalStorage} from 'ngx-webstorage';
+import {LocalStorageService, LocalStorage} from '@rars/ngx-webstorage';
 
 @Component({
 	selector: 'foo',
@@ -216,7 +216,7 @@ export class FooComponent {
 ##### Usage:
 ````typescript
 import {Component, OnInit} from '@angular/core';
-import {LocalStorageService, LocalStorage} from 'ngx-webstorage';
+import {LocalStorageService, LocalStorage} from '@rars/ngx-webstorage';
 
 @Component({
 	selector: 'foo',
@@ -250,7 +250,7 @@ export class FooComponent implements OnInit {
 ##### Usage:
 ````typescript
 import {Component} from '@angular/core';
-import {LocalStorageService, LocalStorage} from 'ngx-webstorage';
+import {LocalStorageService, LocalStorage} from '@rars/ngx-webstorage';
 
 @Component({
 	selector: 'foo',
@@ -290,7 +290,7 @@ export class FooComponent {
 #### Usage:
 ````typescript
 import {Component} from '@angular/core';
-import {LocalStorage, SessionStorage} from 'ngx-webstorage';
+import {LocalStorage, SessionStorage} from '@rars/ngx-webstorage';
 
 @Component({
 	selector: 'foo',
@@ -316,7 +316,7 @@ export class FooComponent {
 #### Usage:
 ````typescript
 import {Component} from '@angular/core';
-import {LocalStorage, SessionStorage} from 'ngx-webstorage';
+import {LocalStorage, SessionStorage} from '@rars/ngx-webstorage';
 
 @Component({
 	selector: 'foo',
@@ -340,7 +340,7 @@ Consequence, if you change the value of a bound object's property the new model 
 To handle this cases you have to trigger manually the accessor.
 
 ````typescript
-import {LocalStorage} from 'ngx-webstorage';
+import {LocalStorage} from '@rars/ngx-webstorage';
 
 class FooBar {
 
