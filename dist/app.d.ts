@@ -8,6 +8,6 @@ export declare class Ng2Webstorage {
     private ngZone;
     static forRoot(config?: IWebstorageConfig): ModuleWithProviders;
     constructor(ngZone: NgZone, config: WebstorageConfig);
-    private initStorageListener();
+    private initStorageListener;
 }
 export declare function provideConfig(config: IWebstorageConfig): WebstorageConfig;
